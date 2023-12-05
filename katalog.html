@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Книжный магазин</title>
+    <link rel="icon" type="image/png" href = "favicon-32x32.png"><!-- Фавиконка в формате png -->
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=NotoВ корзинуSerif:wght@400;500;600;700&family=SourceВ корзинуSerifВ корзину4:opsz,wght@8..60,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=NotoВ корзинуSans:wght@400;500;600;700&family=NotoВ корзинуSerif:wght@400;500;600;700&family=SourceВ корзинуSerifВ корзину4:opsz,wght@8..60,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="burger-checkbox" class="burger-checkbox"></input>
+        <label class="burger" for="burger-checkbox"></label>
+        <a href ="file:///D:/ркчир/пр1/index.html"><img src = "android-chrome-512x512.png" width="64" height="64"></a>
+        <div class="circle-notice">
+            <img src="notice.png">
+            <div class="notice-number-circle">
+                <span class="number">4</span>
+            </div>
+            <div class="notices-list">
+                <ul>
+                    <li>Информация о заказе 1</li>
+                    <li>Информация о заказе 2</li>
+                    <li>Информация о заказе 3</li>
+                    <li>Информация о заказе 4</li>
+                </ul>
+            </div>    
+        </div>
+        <nav class="header-nav">
+            <ul class="header-left-nav">
+                <li> <a href="index.html">Главная</a></li>
+                <li> <a href="katalog.html">Каталог</a></li>
+                <li> <a href="aboutUs.html">О нас</a></li>
+                <li> <a href="gallery.html">Галерея</a></li>
+                <li> <a href="trash.html">Корзина</a></li>
+            </ul>
+            <ul class="header-right-nav">
+                <li> <a href="registration.html">Вход</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="Begin">
+        <div class="main-content">
+            <section class="container-improve">
+                <section class="katalog-bestseller">
+                    <img class="main-img katalog-hello-img" src="other/aristotel.png"> 
+                    <div class="container-hello-text katalog-text" style="margin-left: 35px; display: flex; flex-direction: column;">
+                        <p class="katalog-hello">Саморазвитие</p>
+                        <p class="katalog-hello-text">Лучшие книги о философии, науке, психологии и образовании. Становитесь лучше вместе с полкой</p>
+                    </div>
+                </section>
+                <h4 class="improve-title">Саморазвитие</h4>
+                <ul class="improve-books">
+                    <li class="card" data-product-id="1"><img class="cart-image" src="/other/bolshe_ne_mogu.jpeg">
+                        <p class="autor">Ранган Чаттерджи</p>
+                        <p class="title cart-title">Я больше не могу!</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">590 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="2"><img class="cart-image" src="/other/trigger_k_peremenam.jpeg" width="180" height="280">
+                        <p class="autor">Дэвид Ричо</p>
+                        <p class="title">Триггер к переменам</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">650 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="3"><img class="cart-image"  src="/other/check.jpeg" width="180" height="280">
+                        <p class="autor">Игорь Ризов</p>
+                        <p class="title">Чек-лист "79 психотрюков"</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">480 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="4"><img class="cart-image"  src="/other/emotional.jpg" width="180" height="280">
+                        <p class="autor">Дэниел Гоулман</p>
+                        <p class="title">Эмоциональный интеллект</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">370 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="5"><img class="cart-image"  src="/other/sapiens.jpeg" width="180" height="280">
+                        <p class="autor">Юваль Ной Харари</p>
+                        <p class="title">Sapiens. Графическая история</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">510 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="6"><img class="cart-image" src="/other/slishkom.jpeg" width="180" height="280">
+                        <p class="autor">Тим Райхель</p>
+                        <p class="title">Слишком занят, чтобы жить</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">690 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="7"><img class="cart-image" src="/other/idi_tuda.jpeg" width="180" height="280">
+                        <p class="autor">Джим Лоулесс</p>
+                        <p class="title">Иди туда, где страшно</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">550 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="8"><img class="cart-image" src="other/transformation.jpeg" width="180" height="280">
+                        <p class="autor">Брайан Трейси</p>
+                        <p class="title">Трансформация мышления</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">710 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                </ul>
+
+                <h4 class="improve-title">Психология 2=1</h4>
+                <ul class="improve-books">
+                    <li class="card" data-product-id="9"><img class="cart-image" src="/other/vse_zakoncitsya.jpg">
+                        <p class="autor">Ольга Примаченко</p>
+                        <p class="title">Все закончится, а ты нет</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">480 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="10"><img class="cart-image" src="/other/Iiskusstvo.jpg" width="180" height="280">
+                        <p class="autor">Эрих Фромм</p>
+                        <p class="title">Искусство любить</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">390 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="11"><img class="cart-image" src="/other/net_znacit_net.jpeg" width="180" height="280">
+                        <p class="autor">Деймон Захариадис</p>
+                        <p class="title">Нет значит нет</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">530 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="12"><img class="cart-image" src="/other/emotional.jpg" width="180" height="280">
+                        <p class="autor">Дэниел Гоулман</p>
+                        <p class="title">Эмоциональный интеллект</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">280 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="13"><img class="cart-image"  src="/other/kognetivno.jpeg" width="180" height="280">
+                        <p class="autor">Уильям Дж. Кнаус</p>
+                        <p class="title">Когнитивно-поведенческая терапия тревоги</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">410 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="14"><img class="cart-image"  src="/other/lyudi_kotorie.jpeg" width="180" height="280">
+                        <p class="autor">Эрик Берн</p>
+                        <p class="title">Люди, которые играют в игры</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">720 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="15"><img class="cart-image"  src="/other/lovushka.jpg" width="180" height="280">
+                        <p class="autor">Расс Хэррис</p>
+                        <p class="title">Ловушка счастья</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">540 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="16"><img class="cart-image"  src="other/khrupkie.jpg" width="180" height="280">
+                        <p class="autor">Юлия Пирумова</p>
+                        <p class="title">Хрупкие люди</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">800 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="container-west" id ="west">
+                <section class="katalog-bestseller katalog-west">
+                    <img class="main-img katalog-hello-img" src="other/h.png"> 
+                    <div class="container-hello-text katalog-text" style="margin-left: 35px; display: flex; flex-direction: column;">
+                        <p class="katalog-hello west-hello">Западная классика</p>
+                        <p class="katalog-hello-text west-hello-text">Культовые произведения западной литературы</p>
+                    </div>
+                </section>
+                <h4 class="improve-title">Западная литература</h4>
+                <ul class="improve-books">
+                    <li class="card" data-product-id="17"><img class="cart-image"  src="/other/oliver_twist.png">
+                        <p class="autor">Чарлз Диккенз</p>
+                        <p class="title">Приключения Оливера Твиста</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">580 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="18"><img class="cart-image"  src="/other/oscar.jpeg" width="180" height="280">
+                        <p class="autor">Оскар Уайлд</p>
+                        <p class="title">Портрет Дориана Грея</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">690 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="19"><img class="cart-image"  src="/other/martin.jpeg" width="180" height="280">
+                        <p class="autor">Джек Лондон</p>
+                        <p class="title">Мартин Иден</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">280 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="20"><img class="cart-image"  src="/other/velikiy.jpg" width="180" height="280">
+                        <p class="autor">Френсис Скотт Фицджеральд</p>
+                        <p class="title">Великий Гэтсби</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">370 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="21"><img class="cart-image"  src="/other/graf.jpg" width="180" height="280">
+                        <p class="autor">Александр Дюма</p>
+                        <p class="title">Граф Монте-Кристо</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">290 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="22"><img class="cart-image"  src="/other/skotniy.jpeg" width="180" height="280">
+                        <p class="autor">Джордж Оруэлл</p>
+                        <p class="title">Скотный двор</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">490 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="23"><img class="cart-image"  src="/other/chelovek.jpg" width="180" height="280">
+                        <p class="autor">Виктор Гюго</p>
+                        <p class="title">Человек, который смеётся</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">510 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="24"><img class="cart-image" src="other/pobeditel.jpg" width="180" height="280">
+                        <p class="autor">Эрнест Хемингуэй</p>
+                        <p class="title">Победитель не поучает ничего</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">480 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                </ul>
+            </section>
+
+
+
+            <section class="container-child">
+                <section class="katalog-bestseller katalog-child">
+                    <img class="main-img katalog-hello-img" src="other/karlson.png"> 
+                    <div class="container-hello-text katalog-text" style="margin-left: 35px; display: flex; flex-direction: column;">
+                        <p class="katalog-hello child-hello">Детские книги</p>
+                        <p class="katalog-hello-text child-hello-text">Познакомьте ребёнка с фантастическами мирами, добрыми персонажами и увлекательными историями</p>
+                    </div>
+                </section>
+                <h4 class="improve-title">Детская классика</h4>
+                <ul class="improve-books">
+                    <li class="card" data-product-id="25"><img class="cart-image"  src="/other/alice.jpg">
+                        <p class="autor">Льюис Кэролл</p>
+                        <p class="title">Алиса в стране чудес</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">800 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="26"><img class="cart-image"  src="/other/queen.jpg" width="180" height="280">
+                        <p class="autor">Ганс Христиан Андерсен</p>
+                        <p class="title">Снежная королева</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">620 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="27"><img class="cart-image"  src="/other/maugli.jpg" width="180" height="280">
+                        <p class="autor">Редьярд Киплинг</p>
+                        <p class="title">Маугли</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">290 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="28"><img class="cart-image"  src="/other/buratino.jpg" width="180" height="280">
+                        <p class="autor">Алексей Толстой</p>
+                        <p class="title">Приключения Буратино</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">310 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="29"><img class="cart-image"  src="/other/kashtanka.jpg" width="180" height="280">
+                        <p class="autor">Антон Чехов</p>
+                        <p class="title">Каштанка</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">240 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="30"><img class="cart-image"  src="/other/vozhd.jpg" width="180" height="280">
+                        <p class="autor">О.Генри</p>
+                        <p class="title">Вождь краснокожих</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">390 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="31"><img class="cart-image"  src="/other/princ.jpg" width="180" height="280">
+                        <p class="autor">Марк Твен</p>
+                        <p class="title">Принц и нищий</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">410 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="32"><img class="cart-image"  src="other/cheburashka.jpg" width="180" height="280">
+                        <p class="autor">Эдуард Успенский</p>
+                        <p class="title">Маленькие сказки про Чебурашку</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">540 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                </ul>
+
+                <h4 class="improve-title">Познавательные книги</h4>
+                <ul class="improve-books">
+                    <li class="card" data-product-id="33"><img class="cart-image"  src="/other/bolshoe.webp">
+                        <p class="autor">Фарндон Джон</p>
+                        <p class="title">Большое путешествие по телу человека</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">360 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="34"><img class="cart-image"  src="/other/darvin.webp" width="180" height="280">
+                        <p class="autor">Бретт Анна</p>
+                        <p class="title">Чарльз Дарвин</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">455 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="35"><img class="cart-image"  src="/other/chudesa.webp" width="180" height="280">
+                        <p class="autor">Юлия Смирнова</p>
+                        <p class="title">Чудеса природы России</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">370 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="36"><img class="cart-image"  src="/other/cosmo.webp" width="180" height="280">
+                        <p class="autor">Леонид Кочетков</p>
+                        <p class="title">Легендарные русские космонавты</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">490 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="37"><img class="cart-image"  src="/other/antarctida.webp" width="180" height="280">
+                        <p class="autor">Фёдор Конюхов</p>
+                        <p class="title">Антарктида</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">550 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="38"><img class="cart-image"  src="/other/botanicum.webp" width="180" height="280">
+                        <p class="autor">Уллис Кэти</p>
+                        <p class="title">Ботаникум</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">290 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="39"><img class="cart-image"  src="/other/africa.webp" width="180" height="280">
+                        <p class="autor">Хааг Хольгер</p>
+                        <p class="title">Животные Африки в натуральную величину</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">890 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="40"><img class="cart-image"  src="other/goroda.webp" width="180" height="280">
+                        <p class="autor">Михаил Мильчик</p>
+                        <p class="title">Как строили города на Руси</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">770 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="sectionclassic">
+                <section class="katalog-bestseller katalog-classic">
+                    <img class="main-img katalog-hello-img" src="other/lerm.png" style="rotate: 9deg;"> 
+                    <div class="container-hello-text katalog-text" style="margin-left: 35px; display: flex; flex-direction: column;">
+                        <p class="katalog-hello classic-hello">Русская классика</p>
+                        <p class="katalog-hello-text classic-hello-text">Не читали Пушкина и Толстого со школьных времён? Самое время это исправить.</p>
+                    </div>
+                </section>
+                <h4 class="improve-title">Русская классика</h4>
+                <ul class="improve-books">
+                    <li class="card" data-product-id="41"><img class="cart-image"  src="/other/geroy-nashego-vremeni.jpg">
+                        <p class="autor">Михаил Лермонтов</p>
+                        <p class="title">Герой нашего времени</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">450 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="42"><img class="cart-image"  src="/other/prestuplenie.jpg" width="180" height="280">
+                        <p class="autor">Фёдор Достоевский</p>
+                        <p class="title">Преступление и наказание</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">380 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="43"><img class="cart-image"  src="/other/kapitanskaya.jpg" width="180" height="280">
+                        <p class="autor">Александр Пушкин</p>
+                        <p class="title">Капитанская дочка</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">280 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="44"><img class="cart-image"  src="/other/mciri.jpg" width="180" height="280">
+                        <p class="autor">Михаил Лермонтов</p>
+                        <p class="title">Мцыри</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">190 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="45"><img class="cart-image"  src="/other/anna.jpeg" width="180" height="280">
+                        <p class="autor">Лев Толстой</p>
+                        <p class="title">Анна Каренина</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">610 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="46"><img class="cart-image"  src="/other/taras.jpg" width="180" height="280">
+                        <p class="autor">Николай Гоголь</p>
+                        <p class="title">Тарас Бульба</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">390 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="47"><img class="cart-image"  src="/other/bednaya.jpg" width="180" height="280">
+                        <p class="autor">Николай Карамзин</p>
+                        <p class="title">Бедная Лиза</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">190 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                    <li class="card" data-product-id="48"><img class="cart-image"  src="other/belie.jpg" width="180" height="280">
+                        <p class="autor">Фёдор Достоевский</p>
+                        <p class="title">Белые ночи</p>
+                        <div class="button-wrapper">
+                                <p class="price price-katalog">210 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                    </li>
+                </ul>
+                
+            <section class="container-fantastic">
+                <section class="katalog-bestseller katalog-fantastic">
+                    <img class="main-img katalog-hello-img" src="other/sci-fi.png"> 
+                    <div class="container-hello-text katalog-text" style="margin-left: 35px; display: flex; flex-direction: column;">
+                        <p class="katalog-hello fantastic-hello">Фантастика</p>
+                        <p class="katalog-hello-text fantastic-hello-text">Исследуйте фантастические миры с нами</p>
+                    </div>
+                </section>
+                    <h4 class="improve-title">Скидка 25% на фантастику</h4>
+                    <ul class="improve-books">
+                        <li class="card" data-product-id="49"><img class="cart-image"  src="/other/metro.jpeg">
+                            <p class="autor">Дмитрий Глуховский</p>
+                            <p class="title">Метро 2033</p>
+                            <div class="button-wrapper">
+                                <p class="price price-katalog">310 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li class="card" data-product-id="50"><img class="cart-image"  src="/other/robot.jpeg" width="180" height="280">
+                            <p class="autor">Айзек Азимов</p>
+                            <p class="title">Я, Робот</p>
+                            <div class="button-wrapper">
+                                <p class="price price-katalog">270 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li class="card" data-product-id="51"><img class="cart-image"  src="/other/okhota.jpg" width="180" height="280">
+                            <p class="autor">Станислав Лем</p>
+                            <p class="title">Охота</p>
+                            <div class="button-wrapper">
+                                <p class="price price-katalog">330 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li class="card" data-product-id="52"><img class="cart-image"  src="/other/institut.jpg" width="180" height="280">
+                            <p class="autor">Стивен Кинг</p>
+                            <p class="title">Институт</p>
+                            <div class="button-wrapper">
+                                <p class="price price-katalog">410 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li class="card" data-product-id="53"><img class="cart-image"  src="/other/duna.jpeg" width="180" height="280">
+                            <p class="autor">Фрэнк Герберт</p>
+                            <p class="title">Дюна</p>
+                            <div class="button-wrapper">
+                                <p class="price price-katalog">510 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+
+                        </li>
+                        <li class="card" data-product-id="54"><img class="cart-image"  src="/other/za_milliard.jpg" width="180" height="280">
+                            <p class="autor">Аркадий и Борис Стругацкие</p>
+                            <p class="title">За миллиард лет до конца света</p>
+                            <div class="button-wrapper">
+                                <p class="price price-katalog">320 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li class="card" data-product-id="55"><img class="cart-image"  src="/other/akadimia.jpg" width="180" height="280">
+                            <p class="autor">Айзек Азимов</p>
+                            <p class="title">Академия и империя</p>
+                            <div class="button-wrapper">
+                                <p class="price price-katalog">220 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li class="card" data-product-id="56"><img class="cart-image"  src="other/ostrov.jpg" width="180" height="280">
+                            <p class="autor">Александр Беляев</p>
+                            <p class="title">Остров погибших кораблей</p>
+                            <div class="button-wrapper">
+                                <p class="price price-katalog">385 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            
+            <section class="container-economy">
+                <section class="katalog-bestseller katalog-economy">
+                    <img class="main-img katalog-hello-img" src="other/adam.png"> 
+                    <div class="container-hello-text katalog-text" style="margin-left: 35px; display: flex; flex-direction: column;">
+                        <p class="katalog-hello economy-hello">Экономика</p>
+                        <p class="katalog-hello-text economy-hello-text">Станьте экспертом в области экономики и фанансов</p>
+                    </div>
+                </section>
+                    <h4 class="improve-title">Доступная экономика</h4>
+                    <ul class="improve-books">
+                        <li class="card" data-product-id="57"><img class="cart-image"  src="/other/prosto.jpeg">
+                            <p class="autor">Александр Никонов</p>
+                            <p class="title">Экономика просто и понятно</p>
+                            <div class="button-wrapper">
+                                <p class="price price-katalog">220 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+            
+                        </li>
+                        <li class="card" data-product-id="58"><img class="cart-image"  src="/other/novaya.jpg" width="180" height="280">
+                            <p class="autor">Ричард Талер</p>
+                            <p class="title">Новая поведенческая экономика</p>
+                            <div class="button-wrapper">
+                                <p class="price price-katalog">310 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li class="card" data-product-id="59"><img class="cart-image"  src="/other/golaya.jpg" width="180" height="280">
+                            <p class="autor">Чарльз Уилан</p>
+                            <p class="title">Голая экономика</p>
+                            <div class="button-wrapper">
+                                <p class="price price-katalog">390 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li class="card" data-product-id="60"><img class="cart-image"  src="/other/na_paltsah.jpeg" width="180" height="280">
+                            <p class="autor">Александр Никонов</p>
+                            <p class="title">Экономика на пальцах</p>
+                            <div class="button-wrapper">
+                                <p class="price price-katalog">430 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li class="card" data-product-id="61"><img class="cart-image"  src="/other/vpecatleniy.jpg" width="180" height="280">
+                            <p class="autor">Джеймс Гилмор</p>
+                            <p class="title">Экономика впечатлений</p>
+                            <div class="button-wrapper">
+                                <p class="price price-katalog">290 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li class="card" data-product-id="62"><img class="cart-image"  src="/other/iran.jpeg" width="180" height="280">
+                            <p class="autor">Павла Рипинская</p>
+                            <p class="title">Иран. Экономика под санкциями</p>
+                            <div class="button-wrapper">
+                                <p class="price price-katalog">420 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li class="card" data-product-id="63"><img class="cart-image"  src="/other/klaus.jpeg" width="180" height="280">
+                            <p class="autor">Клаус Шваб</p>
+                            <p class="title">Капитализм всеобщего блага</p>
+                            <div class="button-wrapper">
+                                <p class="price price-katalog">510 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li class="card" data-product-id="64"><img class="cart-image"  src="other/zanimatelnaya.jpg" width="180" height="280">
+                            <p class="autor">Алексей Савватеев</p>
+                            <p class="title">Занимательная экономика</p>
+                            <div class="button-wrapper">
+                                <p class="price price-katalog">370 <span>руб.</span></p>
+                                <div class="wrap-but">
+                                    <button class="plus-cl" id="plus" style="width: 40px; height: 40px; display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    border: none;
+                                    background-color: transparent; border-radius: 10px; cursor: pointer;"><img class="shop-button" src="other/shop.png" alt="" style=" width: 25px; height: 25px; background: transparent; border: none;"></button>
+                                </div>
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+        </div>
+        <script src="database.js"></script> 
+        <script src="counter.js"></script> 
+       <!-- <script src="catalog.js"></script> -->
+    </main>
+    <a href = "#Begin"><img class="buttonUp" src = "up.png" width="36" height="36"></a>
+    <footer class="registration-footer">
+        <div class="container">
+            <section class="footer-section">
+                <h3>О нас</h3>
+                <p>Полка - это лучший книжный магазин, где вы точно найдёте интересующую Вас книгу и получите только положительные эмоции от обслуживания. Главная цель нашей команды - быть проводником в мир литературы для всех желающих. </p>
+                <div class="social-footer">
+                    <button class="button-tg" onclick="window.location.href = 'https://web.telegram.org/';">
+                        <img src="free-icon-telegram-2111708.png" width="16" height="16">
+                    </button>
+                    <button class="button-vk" onclick="window.location.href = 'https://vk.com/';">
+                        <img src="free-icon-vk-733639.png" width="16" height="16">
+                    </button>
+                    <button class="button-yt" onclick="window.location.href = 'https://www.youtube.com/';">
+                        <img src="free-icon-youtube-2111795.png" width="16" height="16">
+                    </button>
+                </div>
+            </section>
+            <section class="footer-section">
+                <h3>Моя Полка</h3>
+                <ul class="footer-list">
+                    <li><a href="registration.html">Вход</a></li>
+                    <li><a href="aboutUs.html">О нас</a></li>
+                    <li><a href="aboutUs.html">Помощь</a></li>
+                </ul>
+            </section>
+            <section class="footer-section">
+                <h3>Важное</h3>
+                <ul class="footer-list">
+                    <li><a href="katalog.html">Каталог</a></li>
+                    <li><a href="katalog.html">Акции</a></li>
+                    <li><a href="registration.html">Личный кабинет</a></li>
+                </ul>
+            </section>
+            <section class="footer-section">
+                <h3>Связаться с нами</h3>
+                <ul class="footer-list">
+                    <li>
+                        <img src="other/telephone-handle-silhouette.png" alt="" class="connect-img">
+                        <a href="tel:01234567890">+7 (918) 777-77-77</a><br><!--Ссылка на номер телефона-->
+                    </li>
+                    <li>
+                        <img src="other/envelope.png" alt="" class="connect-img">
+                        <a href="mailto:sendemail@mail.ru?subject=Новый заказ&body=Здравствуйте, я хочу сделать заказ в вашем магазине.">Polka@mail.ru</a><!--Ссылка на эл. почту-->
+                    </li>
+                </ul>
+            </section>
+            <p><small>© 2023 Полка. Книжный магазин</small></p>
+            <p class="myName"><small>Меликфашян Г.А ИКБО-20-22</small></p>
+        </div>
+        
+    </footer>
+</body>
+</html>

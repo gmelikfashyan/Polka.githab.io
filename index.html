@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Книжный магазин</title>
+    <link rel="icon" type="image/png" href = "favicon-32x32.png"><!-- Фавиконка в формате png -->
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Noto+Serif:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="burger-checkbox" class="burger-checkbox"></input>
+        <label class="burger" for="burger-checkbox"></label>
+        <a href ="file:///D:/ркчир/пр1/index.html"><img src = "android-chrome-512x512.png" width="64" height="64"></a>
+        <div class="circle-notice">
+            <img src="notice.png">
+            <div class="notice-number-circle">
+                <span class="number">4</span>
+            </div>
+            <div class="notices-list">
+                <ul>
+                    <li>Информация о заказе 1</li>
+                    <li>Информация о заказе 2</li>
+                    <li>Информация о заказе 3</li>
+                    <li>Информация о заказе 4</li>
+                </ul>
+            </div>    
+        </div>
+        <nav class="header-nav">
+            <ul class="header-left-nav">
+                <li> <a href="index.html">Главная</a></li>
+                <li> <a href="katalog.html">Каталог</a></li>
+                <li> <a href="aboutUs.html">О нас</a></li>
+                <li> <a href="gallery.html">Галерея</a></li>
+                <li> <a href="trash.html">Корзина</a></li>
+            </ul>
+            <ul class="header-right-nav">
+                <li> <a href="registration.html">Вход</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- <header>
+        <input type="checkbox" id="burger-checkbox" class="burger-checkbox"></input>
+        <label class="burger" for="burger-checkbox"></label>
+        <a href ="file:///D:/ркчир/пр1/index.html"><img src = "android-chrome-512x512.png" width="64" height="64"></a>
+        <div class="circle-notice">
+            <img src="notice.png">
+            <div class="notice-number-circle">
+                <span class="number" id="notice-counter"></span>
+            </div>
+            <div class="notices-list">
+                <button id="stop">Стоп</button>
+                <ul id="notice-list">
+                    <li>Информация о заказе 1</li>
+                    <li>Информация о заказе 2</li>
+                    <li>Информация о заказе 3</li>
+                    <li id="notice">Информация о заказе 4</li>
+                </ul>
+            </div>   
+        </div> -->
+        <!-- <script>
+            let list = document.getElementById('notice-list')
+            let i = 0;
+            let counter = document.getElementById('notice-counter')
+            function createNotice() {
+                let item = document.createElement('li');
+                item.innerHTML = "Новое сообщение";
+                list.append(item);
+                ++i;
+                counter.innerHTML = i;
+            }
+            setInterval(() => createNotice(),  3000);
+        </script> -->
+        <!-- <script>
+            let list = document.getElementById('notice-list')
+            let i = 0;
+            let counter = document.getElementById('notice-counter')
+            let timerId
+            function createNotice() {
+                let item = document.createElement('li');
+                item.innerHTML = "Новое сообщение";
+                list.append(item);
+                ++i;
+                counter.innerHTML = i;
+            }
+            function fun() {
+                timerId = setInterval(() => createNotice(),  3000);
+                if (i > 10) {
+                    clearInterval(timerId);
+                }
+            }
+            function delayDecorator(func, delay){
+                return function(){
+                    clearInterval(timerId);
+                    setTimeout(func, delay);
+                }
+            }
+            let stop = document.getElementById('stop');
+            fun();
+            stop.onclick = function() {
+                let delayedInterval = delayDecorator(fun, 10000);
+                delayedInterval();
+            }
+        </script> -->
+        <!-- <nav class="header-nav">
+            <ul class="header-left-nav">
+                <li> <a href="index.html">Главная</a></li>
+                <li> <a href="katalog.html">Каталог</a></li>
+                <li> <a href="#sales">Акции</a></li>
+                <li> <a href="#connection">Связаться с нами</a></li>
+                <li> <a href="aboutUs.html">О нас</a></li>
+                <li> <a href="gallery.html">Галерея</a></li>
+            </ul>
+            <ul class="header-right-nav">
+                <li> <a href="registration.html">Вход</a></li>
+            </ul>
+        </nav>
+    </header> -->
+    <main id="Begin">
+        <section class="main-hello">
+            <img class="main-img" src="other/pushkin.png">
+            <div class="container-hello-text" style="margin-left: 35px; display: flex; flex-direction: column;">
+                <p class="main-hello-text"> - проводник в мир литературы</p>
+                <p class="text-main-hello">Бестселлеры и специальная литература, самые свежие новинки и нестареющая классика. В нашем интернет-магазине вы найдёте всё, что можно прочитать.</p>
+                <a href="katalog.html" class="hello-button">Каталог</a>
+                <img src="other/Removal-719.png" alt="" class="mobile-img pic-hello" height="180px">
+            </div>
+            <img src="other/pushkin.png" alt="" class="mobile-img pushkin-hello" height="150px">
+            <img src="other/Removal-865.png" alt="" class="mobile-img medniy-hello" height="180px">
+            
+        </section>
+       <!--  <section class="section-main-cards">
+            <section class="main-card">
+                <div class="main-card-content">
+                    <p class= "main-card-title">Лучшие книги</p>
+                    <p class="main-card-text">В нашем магазине вы точно найдёте интересующую Вас книгу, а мы поможем сделать покупку приятнее.</p>
+                    <button class="main-card-button">Подробнее</button>
+                </div>
+                <div class="main-card-number">01</p>
+            </section>
+            <section class="main-card">
+                <div class="main-card-content">
+                    <p class= "main-card-title">Акции</p>
+                    <p class="main-card-text">Множество специальных предложений и акций сделают литературный мир доступным каждому</p>
+                    <button class="main-card-button">Подробнее</button>
+                    <p class="main-card-number">02</p>
+                </div>
+            </section>
+            <section class="main-card">
+                <div class="main-card-content">
+                    <p class= "main-card-title">Доставка</p>
+                    <p class="main-card-text">Мы доставим Ваш заказ, где бы вы не находились</p>
+                    <p class="main-card-number">03</p>
+                    <button class="main-card-button">Подробнее</button>
+                </div>
+            </section>
+        </section>
+
+        <section class="section-cards-two">
+            <section class="card-two">
+                <div class="card-two-content">
+                    <p class= "card-two-title">Лучшие книги</p>
+                    <p class="card-two-text">В нашем магазине вы точно найдёте интересующую Вас книгу, а мы поможем сделать покупку приятнее.</p>
+                    <button class="card-two-button">Подробнее</button>
+                </div>
+                <div class="card-two-number">01</p>
+            </section>
+            <section class="card-two">
+                <div class="card-two-content">
+                    <p class= "card-two-title">Акции</p>
+                    <p class="card-two-text">Множество специальных предложений и акций сделают литературный мир доступным каждому</p>
+                    <button class="card-two-button">Подробнее</button>
+                    <p class="card-two-number">02</p>
+                </div>
+            </section>
+            <section class="card-two">
+                <div class="card-two-content">
+                    <p class= "card-two-title">Доставка</p>
+                    <p class="card-two-text">Мы доставим Ваш заказ, где бы вы не находились</p>
+                    <p class="card-two-number">03</p>
+                    <button class="card-two-button">Подробнее</button>
+                </div>
+            </section>
+        </section>
+
+        <section class="section-cards-three">
+            <section class="card-three">
+                <div class="back-item"></div>
+                <div class="card-three-content">
+                    <p class= "card-three-title">Лучшие книги</p>
+                    <p class="card-three-text">В нашем магазине вы точно найдёте интересующую Вас книгу, а мы поможем сделать покупку приятнее.</p>
+                    <button class="card-three-button">Подробнее</button>
+                </div>
+            </section>
+            <section class="card-three">
+                <div class="back-item"></div>
+                <div class="card-three-content">
+                    <p class= "card-three-title">Акции</p>
+                    <p class="card-three-text">Множество специальных предложений и акций сделают литературный мир доступным каждому</p>
+                    <button class="card-three-button">Подробнее</button>
+                </div>
+            </section>
+            <section class="card-three">
+                <div class="back-item"></div>
+                <div class="card-three-content">
+                    <p class= "card-three-title">Доставка</p>
+                    <p class="card-three-text">Мы доставим Ваш заказ, где бы вы не находились</p>
+                    <button class="card-three-button">Подробнее</button>
+                </div>
+            </section>
+        </section> -->
+
+        <div class=""></div>
+        <div class="main-content">
+            <!-- <section>
+                <h1 id="Begin">Рады видеть Вас в нашем книжном интернет-магазине</h1>
+                <blockquote>Без книги в мире ночь и ум людской убог,<br>Без книги, как стада, бессмыслены народы.<br>В ней добродетель, долг, в ней мощь и соль природы,<br>В ней будущность твоя и верных благ залог.</blockquote>
+                <p>Виктор Гюго, <cite>Без книги в мире ночь и ум людской убог</cite></p>
+            </section> -->
+            <div class="clearfix">
+            </div>
+            <div class="sidebar-main">
+                <aside>
+                    <h2>Лучшие цитаты</h2>
+                    <ul class="improve-books sidebar-books">
+                        <li class="container-quote">
+                            <div class="text-quote">
+                                <p class="title-book">Идиот</p>
+                                <p class="quote">«Сострадание есть главнейший и, может быть, единственный закон бытия всего человечества»</p>
+                            </div>
+                            <img src="/other/idiot.jpg">
+                        </li>
+                        <li class="container-quote">
+                            <div class="text-quote">
+                                <p class="title-book">Обломов</p>
+                                <p class="quote">«Да разве после одного счастья бывает другое, потом третье, такое же?»</p>
+                            </div>
+                            <img src="/other/oblomov.jpg">
+                        </li>
+                        <li class="container-quote">
+                            <div class="text-quote">
+                                <p class="title-book">Детство</p>
+                                <p class="quote">«Если улыбка прибавляет прелести лицу, то лицо прекрасно; если она не изменяет его, то оно обыкновенно; если она портит его, то оно дурно»</p>
+                            </div>
+                            <img src="/other/detstvo.jpg">
+                        </li>
+                    </ul>
+                </aside>
+                    <!-- <p>
+                        <blockquote>Сострадание есть главнейший и, может быть, единственный закон бытия всего человечества.</blockquote>
+                        <p><cite>Идиот</cite>, Ф.М. Достоевский</p>
+                        <hr>
+                        <blockquote>Да разве после одного счастья бывает другое, потом третье, такое же?</blockquote>
+                        <p><cite>Обломов</cite>, И.А. Гончаров</p>
+                        <hr>
+                        <blockquote>Если улыбка прибавляет прелести лицу, то лицо прекрасно; если она не изменяет его, то оно обыкновенно; если она портит его, то оно дурно?</blockquote>
+                        <p><cite>Детство</cite>, Л.Н. Толстой</p>
+                    </p> -->
+                <!-- <aside class="aside-feedback">
+                    <h2>Оставьте отзыв!</h2>
+                    <form method="post" action="">
+                        <textarea name="feedback" id="feedback" cols="25" rows="4" minlength="3" maxlength="1000" placeholder="Мой любимый книжный!" required></textarea>
+                        <input class="input-area" type="file" name="file" id="file" accept="image/*">
+                        <label for="file">Добавить фото</label>
+                        <button name="button">Отправить</button>
+                    </form>
+                </aside> -->
+            </div>
+            <!-- <section class="section-katalog">
+                <h2 id="katalog">Каталог</h2> 
+                <ol type="A", start="1"> 
+                    <li>Канцтовары</li> 
+                    <li>Книги
+                        <ul>            
+                            <li>Художественная литература</li>
+                            <li>Комиксы</li>
+                            <li><a href="https://ru.wikipedia.org/wiki/Манга" rel="external">Манга</a></li> 
+                            <li>Кулинария</li>
+                            <li>Образовние</li>
+                            <li>Психология</li>
+                            <li>Зарубежная литература<sub>(язык ориг.)</sub></li>
+                            <li>Учебная литература</li>
+                        </ul>
+                    </li>
+                    <li>Подарки и сувениры</li>
+                </ol>
+            </section> -->
+            <section>
+                <section class="sectionchildren">
+                    <h3>Только детские книги читать!</h3>
+                    <article class="article-video-children">
+                        <iframe width="400" height="225" src="https://www.youtube.com/embed/F0LVwxomWCM?si=HLUTOiPlGigBxIFm" 
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                        </iframe>
+                    </article>
+                    </p> <!--Отображение предварительно отформатированного текста-->
+                    <section class="sectionsales">
+                        <section class="katalog-bestseller katalog-sales">
+                            <img class="main-img katalog-hello-img" src="other/sales.png"> 
+                            <div class="container-hello-text katalog-text sales-text" style="margin-left: 35px; display: flex; flex-direction: column;">
+                                <p class="katalog-hello sales-hello">Акции</p>
+                                <p class="katalog-hello-text sales-hello-text">Наши специальные предложения сделают мир литературы доступнее</p>
+                            </div>
+                        </section>
+                        <section class="grid-sales">
+                            <div class="sales-item" style="background: linear-gradient(135deg, #111111, #343434);">
+                                <h5 class="title-sales-item" style="color: #fff;">Скидка 25% на всю фантастику</h5>
+                                <a href="katalog.html" class="hello-button sales-button">Каталог</a>
+                                <img class="sales-item-img first-sales-item-img" src="other/metro.jpeg" alt="" style="rotate: -35deg;">
+                                <img class="sales-item-img" src="other/robot.jpeg" alt="" style="rotate: -15deg;">
+                            </div>
+                            <div class="sales-item" style="background: linear-gradient(135deg, #F5F5F5, #F5DEB3);">
+                                <h5 class="title-sales-item">Русская литература</h5>
+                                <a href="katalog.html" class="hello-button sales-button">Каталог</a>
+                                <img class="sales-item-img first-sales-item-img" src="other/kavkaz.jpg" alt="" style="rotate: -35deg;">
+                                <img class="sales-item-img" src="other/karenina.jpg" alt="" style="rotate: -15deg;">
+                            </div>
+                            <div class="sales-item" style="background: linear-gradient(135deg, #F0F8FF, #87D3F8);">
+                                <h5 class="title-sales-item">Психология 2=1</h5>
+                                <a href="katalog.html" class="hello-button sales-button">Каталог</a>
+                                <img class="sales-item-img first-sales-item-img" src="other/bytsoboy.jpeg" alt="" style="rotate: -35deg;">
+                                <img class="sales-item-img" src="other/ti+mozhesh.jpeg" alt="" style="rotate: -15deg;">
+                            </div>
+                            <div class="sales-item" style="background: linear-gradient(135deg, #3D2B1F, #C3B091);">
+                                <h5 class="title-sales-item" style="color: #fff;">Доступная экономика</h5>
+                                <a href="katalog.html" class="hello-button sales-button">Каталог</a>
+                                <img class="sales-item-img first-sales-item-img" src="other/ii.jpg" alt="" style="rotate: -35deg;">
+                                <img class="sales-item-img" src="other/shwab.jpg" alt="" style="rotate: -15deg;">
+                            </div>
+                        </section>
+                        
+                    </section>
+                </section>
+                <section class="sectionclassic">
+                    <section class="katalog-bestseller katalog-classic">
+                        <img class="main-img katalog-hello-img" src="other/lerm.png" style="rotate: 9deg;"> 
+                        <div class="container-hello-text katalog-text" style="margin-left: 35px; display: flex; flex-direction: column;">
+                            <p class="katalog-hello classic-hello">Русская классика</p>
+                            <p class="katalog-hello-text classic-hello-text">Не читали Пушкина и Толстого со школьных времён? Самое время это исправить.</p>
+                        </div>
+                    </section>
+                    <h4 class="improve-title">Русская классика</h4>
+                    <ul class="improve-books">
+                        <li><img src="/other/geroy-nashego-vremeni.jpg">
+                            <p class="autor">Михаил Лермонтов</p>
+                            <p class="title">Герой нашего времени</p>
+                        </li>
+                        <li><img src="/other/prestuplenie.jpg" width="180" height="280">
+                            <p class="autor">Фёдор Достоевский</p>
+                            <p class="title">Преступление и наказание</p>
+                        </li>
+                        <li><img src="/other/kapitanskaya.jpg" width="180" height="280">
+                            <p class="autor">Александр Пушкин</p>
+                            <p class="title">Капитанская дочка</p>
+                        </li>
+                        <li><img src="/other/mciri.jpg" width="180" height="280">
+                            <p class="autor">Михаил Лермонтов</p>
+                            <p class="title">Мцыри</p>
+                        </li>
+                        <li><img src="/other/anna.jpeg" width="180" height="280">
+                            <p class="autor">Лев Толстой</p>
+                            <p class="title">Анна Каренина</p>
+                        </li>
+                        <li><img src="/other/taras.jpg" width="180" height="280">
+                            <p class="autor">Николай Гоголь</p>
+                            <p class="title">Тарас Бульба</p>
+                        </li>
+                        <li><img src="/other/bednaya.jpg" width="180" height="280">
+                            <p class="autor">Николай Карамзин</p>
+                            <p class="title">Бедная Лиза</p>
+                        </li>
+                        <li><img src="other/belie.jpg" width="180" height="280">
+                            <p class="autor">Фёдор Достоевский</p>
+                            <p class="title">Белые ночи</p>
+                        </li>
+                    </ul>
+                </section>
+                    <!-- <section class="sectionclassic-hello">
+                        <img class="title-img" src="https://papik.pro/izobr/uploads/posts/2023-03/1677765780_papik-pro-p-karikaturi-na-pisatelya-tolstogo-27.jpg" usemap="#shapes" width="400" height="300">
+                       <img class="title-img" src="other/peace and war.webp" usemap="#shapes">
+                        <map name="shapes">Карта изображения
+                        <area shape="polygon" coords="79,6,5,134,153,134" href="https://www.culture.ru/literature/poems/author-aleksandr-pushkin">
+                        <area shape="rectangle" coords="300,170,400,300" href = "https://www.culture.ru/persons/8159/fedor-dostoevskii">
+                        <area shape="circle" coords="200,150,30" href="https://www.culture.ru/persons/8211/lev-tolstoi">
+                        </map>
+                        <div class="sectionclassic-hello-text" >
+                            <h3>Классика всегда в моде</h3>
+                            <p>Не читали Пушкина, Лермонтова и Толстого со школьных времён? Самое время это исправить.</p>
+                        </div>
+                    </section>
+                    <h4 class="classic-books-title">Популярная классика</h4>
+                    <ul class="classicKatalog">
+                        <li><img src="kapitanskayaDochka.jpeg" width="180" height="280">
+                            <div id="kap">
+                                <p></p>
+                                <button id="accButton">Добавить в корзину</button>
+                            </div>
+                        </li>
+                        <script src="Accumulator.js"></script>
+                        <li id="Война и мир"><img src="warAndPeace.jpg" width="180" height="280">'
+                            <p>45</p>
+                            <button class="plus" data-id="Война и мир">Добавить в корзину</button>
+                        </li>
+                        <li id="Капитанская дочка">
+                            <img src="geroy.jpg" width="180" height="280">
+                            <p>50</p>
+                            <button class="plus" data-id="Капитанская дочка">Добавить в корзину</button>
+                        </li>
+                        <li><img src="kapitanskayaDochka.jpeg" width="180" height="280"></li>
+                        <li><img src="warAndPeace.jpg" width="180" height="280"> </li>
+                        <li><img src="geroy.jpg" width="180" height="280"> </li>
+                        <li><img src="kapitanskayaDochka.jpeg" width="180" height="280"></li>
+                        <li><img src="warAndPeace.jpg" width="180" height="280"> </li>
+                        <li><img src="geroy.jpg" width="180" height="280"> </li>
+                        <li><img src="kapitanskayaDochka.jpeg" width="180" height="280"></li>
+                        <li><img src="warAndPeace.jpg" width="180" height="280"> </li>
+                        <li><img src="geroy.jpg" width="180" height="280"> </li>
+                    </ul>
+                    <script src="cart.js"></script>
+                </section> -->
+            <article class="ArticleLearnSlang">
+                <h2>Будь подкован! Учи литературный сленг с нами</h2>
+                <dl><!--Список описаний-->
+                    <dt>Акмеизм</dt>
+                    <dd>Литературное течение, противостоящее символизму и возникшее в начале XX века в России. Акмеисты провозглашали материальность, точность слова. (от греч. <i>άκμη</i> — вершина)</dd>
+                    <dt>Драма</dt>
+                    <dd>1. Один из трех родов литературы, определяющий произведения, предназначенные для сценического воплощения.</dd>
+                    <dd>2. Драмой также называют драматическое произведение, не имеющее четких жанровых признаков, соединяющее в себе приемы разных жанров.</dd>
+                    <dt>Литота</dt>
+                    <dd>1. Прием преуменьшения явления или деталей его – обратная гипербола.</dd>
+                    <dd>2. Прием характеристики того или иного явления не прямым определением, а отрицанием противоположного определения.</dd>
+                    <dt>Неологизмы</dt>
+                    <dd>Новообразованные слова или выражения.</dd>
+                    <dt>Очерк</dt>
+                    <dd>Литературное произведение, основанное на фактах, документах, наблюдениях автора.</dd>
+                </dl>
+            </article>
+            <section>
+                <h2 id = "connection">Свяжитесь с нами для заказа</h2>
+                <ul>
+                    <li>
+                        <a href="tel:01234567890">Свяжитесь с оператором по телефону</a><br><!--Ссылка на номер телефона-->
+                    </li>
+                    <li>
+                        <a href="mailto:sendemail@mail.ru?subject=Новый заказ&body=Здравствуйте, я хочу сделать заказ в вашем магазине.">Отправьте письмо о заказе на почту</a><!--Ссылка на эл. почту-->
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+    </main>
+    <a href = "#Begin"><img class="buttonUp" src = "up.png" width="36" height="36"></a>
+    <footer class="registration-footer">
+        <div class="container">
+            <section class="footer-section">
+                <h3>О нас</h3>
+                <p>Полка - это лучший книжный магазин, где вы точно найдёте интересующую Вас книгу и получите только положительные эмоции от обслуживания. Главная цель нашей команды - быть проводником в мир литературы для всех желающих. </p>
+                <div class="social-footer">
+                    <button class="button-tg" onclick="window.location.href = 'https://web.telegram.org/';">
+                        <img src="free-icon-telegram-2111708.png" width="16" height="16">
+                    </button>
+                    <button class="button-vk" onclick="window.location.href = 'https://vk.com/';">
+                        <img src="free-icon-vk-733639.png" width="16" height="16">
+                    </button>
+                    <button class="button-yt" onclick="window.location.href = 'https://www.youtube.com/';">
+                        <img src="free-icon-youtube-2111795.png" width="16" height="16">
+                    </button>
+                </div>
+            </section>
+            <section class="footer-section">
+                <h3>Моя Полка</h3>
+                <ul class="footer-list">
+                    <li><a href="registration.html">Вход</a></li>
+                    <li><a href="aboutUs.html">О нас</a></li>
+                    <li><a href="aboutUs.html">Помощь</a></li>
+                </ul>
+            </section>
+            <section class="footer-section">
+                <h3>Важное</h3>
+                <ul class="footer-list">
+                    <li><a href="katalog.html">Каталог</a></li>
+                    <li><a href="katalog.html">Акции</a></li>
+                    <li><a href="registration.html">Личный кабинет</a></li>
+                </ul>
+            </section>
+            <section class="footer-section">
+                <h3>Связаться с нами</h3>
+                <ul class="footer-list">
+                    <li>
+                        <img src="other/telephone-handle-silhouette.png" alt="" class="connect-img">
+                        <a href="tel:01234567890">+7 (918) 777-77-77</a><br><!--Ссылка на номер телефона-->
+                    </li>
+                    <li>
+                        <img src="other/envelope.png" alt="" class="connect-img">
+                        <a href="mailto:sendemail@mail.ru?subject=Новый заказ&body=Здравствуйте, я хочу сделать заказ в вашем магазине.">Polka@mail.ru</a><!--Ссылка на эл. почту-->
+                    </li>
+                </ul>
+            </section>
+            <p><small>© 2023 Полка. Книжный магазин</small></p>
+            <p class="myName"><small>Меликфашян Г.А ИКБО-20-22</small></p>
+        </div>
+        
+    </footer>
+</body>
+</html>

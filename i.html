@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Noto+Serif:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button id="likeButton2" style="background-color: blue; color: white; position: relative;">Нравится</button>
+    <script>
+        var likeButton = document.getElementById("likeButton2");
+        var originalColor = likeButton.style.backgroundColor;
+        var isDrawing = false;
+
+        likeButton.onclick = function()
+        {
+            if (!isDrawing) {
+                isDrawing = true;
+                document.addEventListener("mousemove", drawElement);
+            } else {
+                isDrawing = false;
+                document.removeEventListener("mousemove", drawElement);
+            }
+        };
+
+        function drawElement(event) {
+            var element = document.createElement('img');
+            element.style.position = "absolute";
+            element.style.zIndex = "-1";
+            element.style.left = event.clientX + "px";
+            element.style.top = event.clientY + "px";
+            element.style.width = "60px";
+            element.style.height = "60px";
+            element.src = "like.png";
+            /* element.style.backgroundColor = "red"; */
+            document.body.appendChild(element);
+        };
+    </script>
+
+    <script>
+        let ul = document.createElement('ul');
+        document.body.append(ul);
+
+        while (true) {
+            let data = prompt("Введите текст для элемента списка", "");
+
+            if (!data) {
+                break;
+            }
+
+            let li = document.createElement('li');
+            li.textContent = data;
+            ul.append(li);
+        }
+    </script>
+    <style>
+    .notification {
+        width: 50%;
+        align-self: center;
+        background-color: #ebeeec;
+        border-radius: 40px;
+        height: 10vw;
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Noto Sans';
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+    }
+    </style>
+    <script>
+        function showNotification(textData) {
+            let notification = document.createElement('div');
+            notification.className = "notification";
+            notification.classList.add("notification");
+            notification.innerHTML = textData;
+            document.body.append(notification);
+
+            setTimeout(() => notification.remove(), 1500);
+        }
+        showNotification("Рады видеть вас!")
+    </script>
+</body>
+</html>

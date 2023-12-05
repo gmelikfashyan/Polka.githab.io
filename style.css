@@ -1,0 +1,129 @@
+body{
+    margin:0;
+    font-family: 'Noto serif';
+}
+main{
+    padding: 0 2%;
+}
+a{
+    text-decoration: none;
+}
+header{
+    background-color: #000;
+    height: 100px;
+    margin: 0;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    padding: 0 2%;
+}
+header .header-nav ul > li{
+    display: inline-block;
+    margin: 0 50px;
+    font-family: 'Noto serif';
+    font-weight: 600;
+    font-size: 16px;
+}
+nav ul {
+    list-style-type: none;
+    width: 1000px;
+}
+header .header-nav ul > li a{
+    color:#a8a8a8;
+}
+header .header-nav ul > li a:visited{
+    color:#a8a8a8;
+}
+header .header-nav ul > li:active{
+    scale: 90%;
+}
+header .header-nav ul > li a:hover{
+    color:#fff;
+}
+aside{
+    float:right;
+    width: 20%;
+    text-align: justify;
+    border-radius: 20px;
+    background-color: #1b1b1b;
+    padding: 1% 2%;
+    margin-right: 0;
+    color: #fff;
+}
+aside blockquote + p{
+    font-family: 'Noto serif';
+    font-style:italic;
+    font-weight: 400;
+}
+footer{
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    height: 80px;;
+    color: #a8a8a8;
+}
+footer nav ul
+{
+    display: flex;
+    list-style-type: none;
+    width: 700px;
+    margin: 0 auto;
+}
+footer nav ul li{
+    display: inline-block;
+    color:#a8a8a8;
+    margin: 0 auto;
+}
+footer a{
+    color: #a8a8a8;
+}
+footer address{
+    margin-left: auto;
+    margin-right: 5px;
+}
+footer address > a{
+    color: #fff;
+}
+footer a:visited{
+    color: #a8a8a8;
+}
+footer a:hover{
+    color: #fff;
+}
+footer p{
+    font: 1em sans-serif;
+    margin-right: auto;
+    margin-left: 5px;
+}
+main a{
+    color: #000;
+}
+main a:visited{
+    color: #000;
+}
+main a:hover{
+    text-decoration: underline;
+}
+h2{
+    font-family: 'Noto serif';
+    font-weight: 700;
+}
+article{
+    margin: 0;
+}
+.ArticleLearnSlang{
+    border-radius: 20px;
+    border-style: solid;
+    box-shadow: #a8a8a8;
+    padding: 1%;
+}
+h1{
+    font-family: 'Noto serif';
+    font-weight: 900;
+    font-size: 36;
+}
+pre{
+    font-family: 'Noto serif';
+}
+

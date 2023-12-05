@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход | регистрация</title>
+    <link rel="icon" type="image/png" href = "favicon-32x32.png"><!-- Фавиконка в формате png -->
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Noto+Serif:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500&display=swap" rel="stylesheet">
+</head>
+<body class="registration-body">
+    <!-- <script>
+        let result = prompt("Желаете пройти регистрацию на сайте?", "");
+        if (result == "Да") {
+            alert("Круто!");
+        }
+        else {
+            alert("Попробуй ещё раз")
+        }
+    </script> -->
+    <header>
+        <input type="checkbox" id="burger-checkbox" class="burger-checkbox"></input>
+        <label class="burger" for="burger-checkbox"></label>
+        <a href ="file:///D:/ркчир/пр1/index.html"><img src = "android-chrome-512x512.png" width="64" height="64"></a>
+        <div class="circle-notice">
+            <img src="notice.png">
+            <div class="notice-number-circle">
+                <span class="number">4</span>
+            </div>
+            <div class="notices-list">
+                <ul>
+                    <li>Информация о заказе 1</li>
+                    <li>Информация о заказе 2</li>
+                    <li>Информация о заказе 3</li>
+                    <li>Информация о заказе 4</li>
+                </ul>
+            </div>    
+        </div>
+        <nav class="header-nav">
+            <ul class="header-left-nav">
+                <li> <a href="index.html">Главная</a></li>
+                <li> <a href="katalog.html">Каталог</a></li>
+                <li> <a href="aboutUs.html">О нас</a></li>
+                <li> <a href="gallery.html">Галерея</a></li>
+                <li> <a href="trash.html">Корзина</a></li>
+            </ul>
+            <ul class="header-right-nav">
+                <li> <a href="registration.html">Вход</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="registration-main">
+        <section class="section-registration">
+            <div class="square" style="--i: 0"></div>
+            <div class="square" style="--i: 1"></div>
+            <div class="square" style="--i: 2"></div>
+            <div class="square" style="--i: 3"></div>
+            <div class="square" style="--i: 4"></div>
+            <h2>Вход | регистрация</h2>
+            <form class="registration-form" action="" method="post">
+                <div class="inputs">
+                    <p>
+                        <label for="login">Логин</label>
+                        <input type="text" name="login" id="login" pattern="^[a-zA-Z0-9_]+$" required placeholder="Leo_Tolstoy">
+                    </p>
+                    <p>
+                        <label for="psswd">Пароль</label>
+                        <input type="password" name="psswd" id="psswd" required placeholder="Пароль">
+                    </p>
+                    <p>
+                        <label for="phone-number">Номер телефона</label>
+                        <input type="tel" name="phone-number" id="phone-number" required placeholder="+7 (xxx) xxx-xx-xx">
+                    </p>
+                    <p>
+                        <label for="email">Почта</label>
+                        <input type="email" name="email" id="email" placeholder="example@gmail.com">
+                    </p>
+                    <p>
+                        <label for="сity-select">Ваш город</label>
+                        <select name="city-select" id="city-select" multiple size="1" required>
+                            <option value="Moscow" selected>Москва</option>
+                            <option value="Saint-Petersburg">Санкт-Петербург</option>
+                            <option value="Krasnodar">Краснодар</option>
+                            <option value="Vladivostok">Владивосток</option>
+                        <select>
+                    </p>
+                    <p>
+                        <label for="birthday-date">Дата рождения</label>
+                        <input type="date" name="birthday-date" id="birthday-date" min="1900-01-01" max="2023-01-01">
+                    </p>
+                </div>
+                <p>
+                    <fieldset>
+                        <legend>Пол</legend>
+                        <label for="male">мужской</label>
+                        <input type="radio" name="gender" value="male">
+                        <label for="female">женский</label>
+                        <input type="radio" name="gender" value="female">
+                    </fieldset>
+                </p>
+                <div class="checkbox-field">
+                    <p>
+                        <input type="checkbox" name="agreementSales" id="agreementSales"> 
+                        <label for="agreementSales">Я хочу получать рассылку об акциях и предложениях на почту</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="user_agreement" id="user_agreement" checked required> 
+                        <label for="user_agreement">Я согласен на обработку персональных данных</label>
+                    </p>
+                </div>
+                <label for="captcha" id="labelCaptcha"></label>
+                <input type="text" name="captcha" id="captcha" required placeholder="Введите капчу">
+                <button class="registration-button" id="checkCaptcha" style="display: block;">Проверить</button>
+                <button class="registration-button" name="registration-button" id="regButton">Зарегистрироваться</button>
+                <script src="captcha.js"></script>
+                <!-- <p class="registration-button">
+                    <input type="submit" name="send-button" id="send-button" value="Зарегистрироваться">
+                </p> -->
+            </form>
+            <!-- <input class="registration-button" type="button" id="but" value="Уже есть аккаунт" /> -->
+            <script src="scrypt.js">
+            </script>
+            <!-- <button id="heart" style=" position: relative;">Мой любимый книжный!</button>
+            <script>
+                var like = document.getElementById("heart");
+                var isDrawing = false;
+    
+                like.onclick = function()
+                {
+                    if (!isDrawing) {
+                        isDrawing = true;
+                        document.addEventListener("mousemove", drawHeart);
+                    } else {
+                        isDrawing = false;
+                        document.removeEventListener("mousemove", drawHeart);
+                    }
+                };
+    
+                function drawHeart(e) {
+                    var heart = document.createElement('img');
+                    heart.style.position = "absolute";
+                    heart.style.zIndex = "-1";
+                    heart.style.left = e.clientX + "px";
+                    heart.style.top = e.clientY + "px";
+                    heart.style.width = "64px";
+                    heart.style.height = "64px";
+                    heart.src = "like.png";
+                    /* element.style.backgroundColor = "red"; */
+                    document.body.appendChild(heart);
+                };
+            </script> -->
+        </section>
+    </main>
+    <footer class="registration-footer">
+        <div class="container">
+            <section class="footer-section">
+                <h3>О нас</h3>
+                <p>Полка - это лучший книжный магазин, где вы точно найдёте интересующую Вас книгу и получите только положительные эмоции от обслуживания. Главная цель нашей команды - быть проводником в мир литературы для всех желающих. </p>
+                <div class="social-footer">
+                    <button class="button-tg" onclick="window.location.href = 'https://web.telegram.org/';">
+                        <img src="free-icon-telegram-2111708.png" width="16" height="16">
+                    </button>
+                    <button class="button-vk" onclick="window.location.href = 'https://vk.com/';">
+                        <img src="free-icon-vk-733639.png" width="16" height="16">
+                    </button>
+                    <button class="button-yt" onclick="window.location.href = 'https://www.youtube.com/';">
+                        <img src="free-icon-youtube-2111795.png" width="16" height="16">
+                    </button>
+                </div>
+            </section>
+            <section class="footer-section">
+                <h3>Моя Полка</h3>
+                <ul class="footer-list">
+                    <li><a href="registration.html">Вход</a></li>
+                    <li><a href="aboutUs.html">О нас</a></li>
+                    <li><a href="aboutUs.html">Помощь</a></li>
+                </ul>
+            </section>
+            <section class="footer-section">
+                <h3>Важное</h3>
+                <ul class="footer-list">
+                    <li><a href="katalog.html">Каталог</a></li>
+                    <li><a href="katalog.html">Акции</a></li>
+                    <li><a href="registration.html">Личный кабинет</a></li>
+                </ul>
+            </section>
+            <section class="footer-section">
+                <h3>Связаться с нами</h3>
+                <ul class="footer-list">
+                    <li>
+                        <img src="other/telephone-handle-silhouette.png" alt="" class="connect-img">
+                        <a href="tel:01234567890">+7 (918) 777-77-77</a><br><!--Ссылка на номер телефона-->
+                    </li>
+                    <li>
+                        <img src="other/envelope.png" alt="" class="connect-img">
+                        <a href="mailto:sendemail@mail.ru?subject=Новый заказ&body=Здравствуйте, я хочу сделать заказ в вашем магазине.">Polka@mail.ru</a><!--Ссылка на эл. почту-->
+                    </li>
+                </ul>
+            </section>
+            <p><small>© 2023 Полка. Книжный магазин</small></p>
+            <p class="myName"><small>Меликфашян Г.А ИКБО-20-22</small></p>
+        </div>
+        
+    </footer>
+</body>
