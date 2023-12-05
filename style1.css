@@ -2355,7 +2355,7 @@ ul{
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .section-registration .square {
         display: none !important;
     }
