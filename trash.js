@@ -12,7 +12,7 @@ function generateCards(cardsData){
             cards.push(`
             <div class="card" data-product-id=${cardsData[i].id}>
                 <div class = "card-wrapper">
-                    <img class="book-img" src="/other/${cardsData[i].png}" alt="">
+                    <img class="book-img" src="other/${cardsData[i].png}" alt="">
                     <div class = "card-name">
                         <p class="cart-title">${cardsData[i].title}</p>
                         <p class="cart-author">${cardsData[i].author}</p>
